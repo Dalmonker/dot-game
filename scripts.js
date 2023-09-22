@@ -6,7 +6,7 @@ let dot1Top = 0;
 let dot2Top = 0;
 
 let dot1Left = 0;
-let dot2Right = 500;
+let dot2Right = 0;
 
 document.addEventListener("keyup", (e) => {
   console.log(e);
