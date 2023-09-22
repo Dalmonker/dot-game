@@ -2,15 +2,24 @@ const dot1 = document.getElementById("dot1");
 const dot2 = document.getElementById("dot2");
 const display = document.getElementById("display");
 
-const block = document.getElementById("block");
-
 const btn = document.getElementById("btn");
+const btnW = document.getElementById("btnW");
+const btnS = document.getElementById("btnS");
+const btnD = document.getElementById("btnD");
+const btnA = document.getElementById("btnA");
+
+const block = document.getElementById("block");
 
 let dot1Top = 0;
 let dot2Top = 0;
 
 let dot1Left = 0;
 let dot2Right = 0;
+
+let wPressed = false;
+let sPressed = false;
+let dPressed = false;
+let aPressed = false;
 
 document.addEventListener("keyup", (e) => {
   switch (e.key) {
@@ -39,21 +48,25 @@ document.addEventListener("keyup", (e) => {
     case "w":
       dot2Top -= 5;
       dot2.style.top = dot2Top + "px";
+      wPressed = true;
       break;
 
     case "s":
       dot2Top += 5;
       dot2.style.top = dot2Top + "px";
+      sPressed = true;
       break;
 
     case "d":
       dot2Right -= 5;
       dot2.style.right = dot2Right + "px";
+      dPressed = true;
       break;
 
     case "a":
       dot2Right += 5;
       dot2.style.right = dot2Right + "px";
+      aPressed = true;
       break;
   }
 });
