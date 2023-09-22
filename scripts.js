@@ -6,7 +6,7 @@ let dot1Top = 0;
 let dot2Top = 0;
 
 let dot1Left = 0;
-let dot2Left = 0;
+let dot2Right = 500;
 
 document.addEventListener("keyup", (e) => {
   console.log(e);
@@ -44,13 +44,13 @@ document.addEventListener("keyup", (e) => {
       break;
 
     case "d":
-      dot2Left -= 5;
-      dot2.style.left = dot2Left + "px";
+      dot2Right -= 5;
+      dot2.style.right = dot2Right + "px";
       break;
 
     case "a":
-      dot2Left += 5;
-      dot2.style.left = dot2Left + "px";
+      dot2Right += 5;
+      dot2.style.right = dot2Right + "px";
       break;
   }
 });
