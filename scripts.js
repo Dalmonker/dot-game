@@ -82,6 +82,8 @@ const Apple = () => {
   const displayWidth = display.clientWidth;
   const displayHeight = display.clientHeight;
 
+  // случайные координаты
+
   const randomLeft = Math.random() * displayWidth;
   const randomTop = Math.random() * displayHeight;
 
