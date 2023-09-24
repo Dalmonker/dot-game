@@ -14,7 +14,7 @@ let dot1Top = 0;
 let dot2Top = 0;
 
 let dot1Left = 0;
-let dot2Right = 0;
+let dot2Left = 200;
 
 let wPressed = false;
 let sPressed = false;
@@ -58,14 +58,14 @@ document.addEventListener("keyup", (e) => {
       break;
 
     case "d":
-      dot2Right -= 5;
-      dot2.style.right = dot2Right + "px";
+      dot2Left += 5;
+      dot2.style.left = dot2Left + "px";
       dPressed = true;
       break;
 
     case "a":
-      dot2Right += 5;
-      dot2.style.right = dot2Right + "px";
+      dot2Left -= 5;
+      dot2.style.left = dot2Left + "px";
       aPressed = true;
       break;
   }
@@ -76,6 +76,8 @@ const Apple = () => {
   apple.style.width = "50px";
   apple.style.height = "50px";
   apple.style.border = "3px solid red";
+
+  // получение размеров display
 
   const displayWidth = display.clientWidth;
   const displayHeight = display.clientHeight;

@@ -19,7 +19,7 @@
 #dot2 {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 200px;
   width: 10px;
   height: 10px;
   background-color: yellow;
