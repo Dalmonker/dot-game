@@ -94,3 +94,4 @@ const Apple = () => {
 };
 
 btn.addEventListener("click", Apple);
+//click
